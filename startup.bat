@@ -1,2 +1,1 @@
-venv\Scripts\activate.bat
-daphne backend.asgi:application
+venv\Scripts\activate.bat && daphne backend.asgi:application
