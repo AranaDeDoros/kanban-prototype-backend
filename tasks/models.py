@@ -26,7 +26,7 @@ class Task(models.Model):
         blank=True,
         related_name='tasks_assigned'
     )
-    priority = models.CharField(max_length=20, choices=STATUS_CHOICES, default='regular') #arrows, icons
+    priority = models.CharField(max_length=20, choices=PRIORITIES, default='regular') #arrows, icons
     estimate_points = models.IntegerField(default=1) #regular input
     acceptance_criteria = models.TextField(default='', help_text='Acceptance Criteria') #available on click
 
